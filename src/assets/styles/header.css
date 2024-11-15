@@ -1,0 +1,159 @@
+/* Full-width background container */
+.header-background {
+  width: 100%;
+  background-color: #f6f6eb;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
+  z-index: -1;
+}
+
+/* Header container */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 950px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem;
+  color: #381fd1;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* Left and Right Header Containers */
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Header Left Styling */
+.header-left {
+  gap: 2rem;
+  padding-top: 1rem;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+}
+
+/* List Items in Left Header */
+.header-left li {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 4rem;
+  z-index: auto;
+  width: 80%;
+  background-color: #fff;
+  display: flex;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  gap: 1rem;
+  text-transform: none;
+  padding: 1rem;
+  visibility: hidden;
+}
+
+.dropdown-content.show {
+  display: flex;
+  visibility: visible;
+}
+
+.dropdown-column {
+  flex: 1;
+  min-width: 100px;
+}
+
+.dropdown-column li {
+  font-size: 1rem;
+}
+
+.dropdown-content p {
+  width: 100%;
+  margin-top: 0.5rem;
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Hide p tags in dropdowns on smaller screens */
+@media (max-width: 768px) {
+  .dropdown-content p {
+    display: none;
+  }
+}
+
+/* Header Right Styling */
+.header-right {
+  gap: 1rem;
+}
+
+.login-button,
+.start-button {
+  background: none;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #381fd1;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.start-button {
+  background-color: #381fd1;
+  color: white;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+
+  .header-right {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #f6f6eb;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 8px;
+    z-index: 2;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #381fd1;
+  }
+
+  .header.show-menu .header-right {
+    display: flex;
+  }
+}
