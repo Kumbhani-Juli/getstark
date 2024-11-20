@@ -1,0 +1,130 @@
+.headline_builder_component {
+  background-color: #edede0;
+  padding-top: 10rem;
+}
+
+.headline-builder {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #99d6cc;
+  border-radius: 2rem;
+  padding: 20px;
+  text-align: center;
+}
+
+.headline-builder h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+
+  color: #381fd1;
+  text-transform: uppercase;
+  margin: 1rem auto;
+}
+
+.headline-builder p {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2em;
+  color: #10284b;
+  margin: 3rem auto;
+}
+
+.subheading {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Ensures 2 columns */
+  grid-template-rows: repeat(2, auto);
+  /* Ensures 2 rows */
+  gap: 20px;
+}
+
+.grid-item {
+  text-align: left;
+  padding: 2rem 4rem;
+}
+
+.grid-item img {
+  width: 15%;
+}
+
+.grid-item h2 {
+  font-size: 20px;
+  color: #381fd1;
+  font-weight: 800;
+  padding-top: 1rem;
+}
+
+.grid-item p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .headline-builder p {
+    font-size: 2.5rem;
+  }
+
+  .headline-builder {
+    margin: 0 1rem;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    /* 1 column for smaller devices */
+    grid-template-rows: auto;
+    gap: 15px;
+  }
+
+  .grid-item {
+    padding: 1.5rem 2rem;
+  }
+
+  .grid-item img {
+    width: 20%;
+    /* Increase image size on smaller screens */
+  }
+
+  .grid-item h2 {
+    font-size: 18px;
+  }
+
+  .grid-item p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .headline_builder_component {
+    padding-top: 5rem;
+  }
+
+  .headline-builder p {
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+
+  .grid-item {
+    padding: 1.5rem;
+  }
+
+  .grid-item img {
+    width: 25%;
+    /* Further increase for smaller screens */
+  }
+
+  .grid-item h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  .grid-item p {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+}

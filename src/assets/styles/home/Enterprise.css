@@ -1,0 +1,147 @@
+.Enterprise-component {
+  background-color: #edede0;
+}
+
+.headline-Enterprise {
+
+  text-align: center;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.headline-image-Enterprise {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 1100px;
+  margin: 2rem auto;
+}
+
+.headline-span-Enterprise {
+  background-color: #fedb63;
+  --mark-skew: 16px;
+  --mark-height: 1em;
+  --mark-overlap: 0.3em;
+}
+
+.headline-Enterprise h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  width: 800px;
+  margin: 1rem auto;
+  line-height: 1.5em;
+}
+
+.headline-Enterprise p {
+  font-size: 1.3rem;
+  width: 800px;
+  font-weight: 500;
+  margin: 1rem auto;
+  line-height: 1.6;
+}
+
+.start-trail-Enterprise {
+  background-color: #381fd1;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .headline-Enterprise {
+    padding: 1.5rem;
+  }
+
+  .headline-Enterprise h1 {
+    font-size: 3rem;
+    max-width: 700px;
+  }
+
+  .headline-Enterprise p {
+    font-size: 1.1rem;
+    max-width: 700px;
+  }
+
+  .headline-image-Enterprise {
+    max-width: 800px;
+  }
+}
+
+/* Small screens (mobile devices) */
+@media (max-width: 768px) {
+  .headline-Enterprise {
+    padding: 1rem;
+  }
+
+  .headline-Enterprise h1 {
+    font-size: 2rem;
+    max-width: 100%;
+  }
+
+  .headline-Enterprise p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .headline-image-Enterprise {
+    max-width: 600px;
+  }
+
+  .start-trail-Enterprise {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra small screens (smaller mobile devices) */
+@media (max-width: 480px) {
+  .headline-Enterprise {
+    padding: 0.5rem;
+  }
+
+  .headline-Enterprise h1 {
+    font-size: 1.5rem;
+  }
+
+  .headline-Enterprise p {
+    font-size: 0.9rem;
+  }
+
+  .headline-image-Enterprise {
+    max-width: 100%;
+  }
+
+  .start-trail-Enterprise {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Ultra-small screens (very small devices) */
+@media (max-width: 320px) {
+  .headline-Enterprise h1 {
+    font-size: 1.2rem;
+  }
+
+  .headline-Enterprise p {
+    font-size: 0.8rem;
+  }
+
+  .headline-image-Enterprise {
+    max-width: 100%;
+  }
+
+  .start-trail-Enterprise {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.7rem;
+  }
+}

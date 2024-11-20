@@ -1,0 +1,55 @@
+.label-component {
+  background-color: #edede0;
+}
+
+.label-images-container {
+  padding: 5rem 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.label-image-wrapper {
+  display: flex;
+  gap: 10rem;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-image {
+  width: 60px;
+  /* Adjust as needed for responsiveness */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .marquee-image {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .label-images-container {
+    padding: 2rem 0;
+  }
+
+  .label-image-wrapper {
+    gap: 5rem;
+  }
+
+  .marquee-image {
+    width: 100px;
+  }
+}

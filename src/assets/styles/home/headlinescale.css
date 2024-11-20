@@ -1,0 +1,185 @@
+.headline-scale {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #f6f6f6;
+  padding: 8rem 0;
+  border-radius: 10px;
+}
+
+.left-side {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.active-image {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 10px;
+}
+
+.righ-side-bgimg {
+  background-image: url('../../images//home//homepage-blob-3.png');
+  background-position: right 1rem top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.right-side {
+  flex: 1;
+  height: 570px;
+  padding: 2rem;
+  position: relative;
+  background-color: #dfc9f5;
+  display: flex;
+  flex-direction: column;
+  right: 15rem;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.section {
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.section:hover {
+  background-color: #c7b7e8;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #381fd1;
+}
+
+.section p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+@media (max-width: 1200px) {
+  .headline-scale {
+    padding: 4rem 1rem;
+  }
+
+  .active-image {
+    max-width: 700px;
+  }
+
+  .righ-side-bgimg {
+    background-position: right center;
+    /* Adjust background position for medium screens */
+  }
+}
+
+@media (max-width: 1024px) {
+  .headline-scale {
+    flex-direction: column;
+    padding: 3rem 1rem;
+  }
+
+  .right-side {
+    padding: 1.5rem;
+    gap: 15px;
+    position: relative;
+    /* Remove or reset positioning for smaller screens */
+    right: 0;
+    /* Reset right positioning */
+    height: auto;
+    /* Allow right-side to scale based on content */
+    width: 100%;
+    /* Make sure the right-side takes full width */
+  }
+
+  .righ-side-bgimg {
+    background-position: center bottom;
+    /* Position the background image to the bottom center */
+    background-size: cover;
+
+    /* Cover the background to fill the area */
+  }
+
+  .active-image {
+    max-width: 600px;
+  }
+
+  .section h2 {
+    font-size: 1.4rem;
+  }
+
+  .section p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .headline-scale {
+    padding: 2rem 0.5rem;
+  }
+
+  .active-image {
+    max-width: 500px;
+  }
+
+  .right-side {
+    padding: 1rem;
+    gap: 10px;
+    width: 100%;
+    /* Full width for smaller screens */
+  }
+
+  .righ-side-bgimg {
+    background-position: center bottom;
+    /* Ensure the background image stays centered */
+    background-size: cover;
+    /* Ensures the background image covers the available space */
+  }
+
+  .section h2 {
+    font-size: 1.2rem;
+  }
+
+  .section p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .headline-scale {
+    padding: 1rem 0.5rem;
+  }
+
+  .active-image {
+    max-width: 100%;
+  }
+
+  .right-side {
+    padding: 0.5rem;
+    gap: 8px;
+    width: 100%;
+    /* Full width for mobile screens */
+    height: auto;
+    /* Remove fixed height, let it adjust based on content */
+  }
+
+  .righ-side-bgimg {
+    background-position: center bottom;
+    /* Center the background image */
+    background-size: cover;
+    /* Ensure the background image covers the entire section */
+  }
+
+  .section h2 {
+    font-size: 1rem;
+  }
+
+  .section p {
+    font-size: 0.85rem;
+  }
+}

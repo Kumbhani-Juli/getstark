@@ -1,0 +1,97 @@
+.support-blocker {
+  background-image: url('../../images/home/gradient-bg.webp');
+  /* Replace with the correct path to your image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Full viewport height */
+  padding-top: 5rem;
+}
+
+.support-content {
+  max-width: 900px;
+  width: 100%;
+  /* Ensures it shrinks on smaller devices */
+
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: left;
+}
+
+.support-content span {
+  color: #fedb63;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.support-content h1 {
+  font-size: 5rem;
+  width: 500px;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.support-content p {
+  font-size: 1.125rem;
+  color: #fff;
+  line-height: 2em;
+  width: 500px;
+}
+
+@media (max-width: 768px) {
+  .support-content {
+    padding: 1.5rem;
+  }
+
+  .support-content h1 {
+    font-size: 2.5rem;
+    width: 100%;
+    /* Adapt width for better layout */
+  }
+
+  .support-content p {
+    font-size: 1rem;
+    width: 100%;
+    /* Ensure text wraps nicely */
+  }
+}
+
+@media (max-width: 460px) {
+  .support-content {
+    padding: 2rem 4rem;
+  }
+
+  .support-content h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+
+    width: 100%;
+    /* Fit within smaller screens */
+  }
+
+  .support-content p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .support-content {
+    padding: 2rem 4rem;
+  }
+
+  .support-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    /* Reduce bottom margin */
+    width: 100%;
+    /* Full width for better text fitting */
+  }
+
+  .support-content p {
+    font-size: 1rem;
+    line-height: 1.75em;
+    /* Adjust line height for readability */
+  }
+}
