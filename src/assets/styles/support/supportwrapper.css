@@ -35,14 +35,42 @@
 
 .support-wrapper-content {
   flex: 2;
-  background-color: #f3f2fc;
+
   padding: 2rem;
   height: fit-content;
   border-radius: 10px;
 }
 
+.support-wrapper-content-body-box {
+  background-color: #f3f2fc;
+  padding: 1rem 3rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.support-wrapper-content-body-box h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
 .support-wrapper-content h2 {
   font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.support-wrapper-content-body {
+  margin-bottom: 3rem;
+}
+
+.support-wrapper-content-body h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.support-wrapper-content-body-box p {
+  font-size: 1.3rem !important;
   margin-bottom: 1rem;
 }
 
@@ -57,9 +85,8 @@
   }
 
   .support-wrapper-sidebar {
-    flex-direction: row;
-    overflow-x: auto;
-    white-space: nowrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .support-wrapper-button {
@@ -68,8 +95,20 @@
     font-size: 0.875rem;
   }
 
+  .support-wrapper-content-body h2 {
+    font-size: 2rem !important;
+  }
+
   .support-wrapper-content {
     padding: 1rem;
+  }
+
+  .support-wrapper-content-body-box h3 {
+    font-size: 1.5rem;
+  }
+
+  .support-wrapper-content-body-box p {
+    font-size: 1rem !important;
   }
 
   .support-wrapper-content h2 {
@@ -82,9 +121,11 @@
   }
 }
 
+/* Responsive for Very Small Screens (480px and below) */
 @media (max-width: 480px) {
   .support-wrapper-button {
     font-size: 0.75rem;
+    padding: 0.5rem;
   }
 
   .support-wrapper-content {
@@ -98,5 +139,50 @@
   .support-wrapper-content p,
   .support-wrapper-content ul {
     font-size: 0.75rem;
+  }
+}
+
+/* Responsive for Ultra-Small Devices (360px and below) */
+@media (max-width: 360px) {
+  .support-wrapper-button {
+    font-size: 0.65rem;
+    padding: 0.4rem;
+  }
+
+  .support-wrapper-content {
+    padding: 0.5rem;
+  }
+
+  .support-wrapper-content h2 {
+    font-size: 1rem;
+  }
+
+  .support-wrapper-content p,
+  .support-wrapper-content ul {
+    font-size: 0.65rem;
+  }
+}
+
+/* Responsive for Larger Screens (1200px and above) */
+@media (min-width: 1200px) {
+  .support-wrapper {
+    gap: 3rem;
+  }
+
+  .support-wrapper-content {
+    padding: 3rem;
+  }
+
+  .support-wrapper-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .support-wrapper-content-body-box p {
+    font-size: 1.5rem;
+  }
+
+  .support-wrapper-content p,
+  .support-wrapper-content ul {
+    font-size: 1.25rem;
   }
 }

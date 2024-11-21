@@ -5,13 +5,6 @@ import homepageheader from "../../assets/images/home/homepage-header.webp"; // M
 const HomepageGradient = () => {
 	return (
 		<div className="homepage-gradient-container">
-			<div className="image-wrapper">
-				<img
-					className="foreground-image"
-					src={homepageheader} // Replace with your second image URL
-					alt="Foreground"
-				/>
-			</div>
 			<div className="content-container">
 				<h1>Supercharge Accessibility</h1>
 				<p>
@@ -19,6 +12,13 @@ const HomepageGradient = () => {
 					Stark to accelerate time to digital accessibility compliance.
 				</p>
 				<button className="signup-button">Sign up for free</button>
+			</div>
+			<div className="image-wrapper">
+				<img
+					className="foreground-image"
+					src={homepageheader} // Replace with your second image URL
+					alt="Foreground"
+				/>
 			</div>
 		</div>
 	);

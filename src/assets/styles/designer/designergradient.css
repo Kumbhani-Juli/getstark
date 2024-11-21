@@ -13,7 +13,7 @@
 }
 
 .content-inner-section {
-  width: 400px;
+  width: 500px;
   margin-left: auto;
 }
 
@@ -77,10 +77,9 @@ p {
 
 .image-section img {
   position: relative;
-  width: 100%;
-  right: -15rem;
-  max-width: 1400px;
-  height: auto;
+  width: 1000px;
+  right: -10rem;
+  height: 700px;
 }
 
 @media (max-width: 1024px) {

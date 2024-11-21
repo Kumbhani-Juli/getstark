@@ -12,6 +12,7 @@ import Desinger from "./components/Designer/Desinger";
 import Login from "./components/Login";
 import StartFree from "./components/StartFree";
 import Support from "./components/support/Support";
+import Pricing from "./components/Pricing";
 
 function App() {
 	return (
@@ -23,13 +24,13 @@ function App() {
 					path="/"
 					element={
 						<>
-							<Header />
+							<Header color="#fff" />
 							<Home /> <Footer />
 						</>
 					}
 				/>
 				<Route
-					path="/designer"
+					path="/:slugs"
 					element={
 						<>
 							<Header color="#381fd1" />
@@ -44,6 +45,16 @@ function App() {
 						<>
 							<Header color="#fff" />
 							<Support />
+							<Footer />
+						</>
+					}
+				/>{" "}
+				<Route
+					path="/pricing"
+					element={
+						<>
+							<Header color="#381fd1" />
+							<Pricing />
 							<Footer />
 						</>
 					}

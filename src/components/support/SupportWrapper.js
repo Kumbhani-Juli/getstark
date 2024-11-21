@@ -1,17 +1,9 @@
 import React, { useState } from "react";
 import "../../assets/styles/support/supportwrapper.css"; // Import CSS for styling
+import SupportDataSection from "../../Data/SupportData";
 
 const SupportWrapper = () => {
-	const [selectedSection, setSelectedSection] = useState("Getting Started");
-
-	const sections = [
-		"Getting Started",
-		"Accounts",
-		"Subscriptions and billing",
-		"Teams",
-		"Privacy",
-		"Contact Us",
-	];
+	const [selectedSection, setSelectedSection] = useState(SupportDataSection[0]);
 
 	const sectionContent = {
 		"Getting Started": (
@@ -96,20 +88,38 @@ const SupportWrapper = () => {
 	return (
 		<div className="support-wrapper">
 			<div className="support-wrapper-sidebar">
-				{sections.map((section) => (
+				{SupportDataSection.map((section, index) => (
 					<button
-						key={section}
+						key={index}
 						className={`support-wrapper-button ${
 							selectedSection === section ? "active" : ""
 						}`}
-						onClick={() => setSelectedSection(section)}
+						onClick={() => setSelectedSection(SupportDataSection[index])}
 					>
-						{section}
+						{section?.title}
 					</button>
 				))}
 			</div>
 			<div className="support-wrapper-content">
-				{sectionContent[selectedSection]}
+				{selectedSection?.RightSectionData?.map((mainData, index) => (
+					<div className="support-wrapper-content-body" key={index}>
+						<h2>{mainData?.title}</h2>
+						<p>{mainData?.content}</p>
+						{mainData?.contentData.map((data, index) => (
+							<div className="support-wrapper-content-body-box" key={index}>
+								<h3>{data?.title}</h3>
+								<p>{data?.content}</p>
+								{data?.ListData?.map((list, index) => (
+									<div key={index}>
+										<ul>
+											<li>{list?.Link}</li>
+										</ul>
+									</div>
+								))}
+							</div>
+						))}
+					</div>
+				))}
 			</div>
 		</div>
 	);

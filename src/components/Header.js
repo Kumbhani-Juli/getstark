@@ -53,7 +53,10 @@ const Header = ({ bgcolor, color }) => {
 								>
 									<div className="dropdown-column">
 										{UseCaseData.map((useCase) => (
-											<Link to={`${useCase.slugs}`}>
+											<Link
+												to={`/${useCase.slugs}`}
+												style={{ textDecoration: "none" }}
+											>
 												<li>{useCase.title}</li>
 												<p>{useCase.content}</p>
 											</Link>
@@ -62,11 +65,16 @@ const Header = ({ bgcolor, color }) => {
 								</div>
 							)}
 						</li>
-						<li>Pricing</li>{" "}
+						<Link
+							to="/pricing"
+							style={{ color: color, textDecoration: "none" }}
+						>
+							<li>Pricing</li>{" "}
+						</Link>
 						<li>
 							<Link
 								to="/support"
-								style={{ color: "#fff", textDecoration: "none" }}
+								style={{ color: color, textDecoration: "none" }}
 							>
 								{" "}
 								support

@@ -3,6 +3,7 @@ import "../../assets/styles/home/bestroi.css";
 import img from "../../assets/images/home/g2-best-roi-fall-2024.png";
 import img1 from "../../assets/images/home/g2-high-performer-fall-2024.png";
 import img2 from "../../assets/images/home/g2-users-love-us.webp";
+import bestROISectionImg1 from '../../assets/images/use-cases/bestROISectionImg1.svg'
 
 function BestROI() {
 	return (
@@ -24,7 +25,10 @@ function BestROI() {
 					companies of all sizes deliver highest quality experiences for all
 					users.
 				</p>
-				<button className="start-button">Start for free</button>
+				<div className="start-button">
+					<img src={bestROISectionImg1} className="img-fluid" alt="section-img" />
+					<p>“My #1 go-to accessibility tool for every project!”</p>
+				</div>
 			</div>
 		</div>
 	);
