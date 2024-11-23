@@ -34,7 +34,10 @@ const Header = ({ bgcolor, color }) => {
 					>
 						<li
 							className="dropdown"
-							onClick={() => setShowUseCases(!showUseCases)}
+							onClick={() => {
+								setShowResources(false);
+								setShowUseCases(!showUseCases);
+							}}
 						>
 							Use Cases
 							<span
@@ -68,6 +71,11 @@ const Header = ({ bgcolor, color }) => {
 						<Link
 							to="/pricing"
 							style={{ color: color, textDecoration: "none" }}
+							onClick={() => {
+								setMenuOpen(false);
+								setShowResources(false);
+								setShowUseCases(false);
+							}}
 						>
 							<li>Pricing</li>{" "}
 						</Link>
@@ -75,6 +83,11 @@ const Header = ({ bgcolor, color }) => {
 							<Link
 								to="/support"
 								style={{ color: color, textDecoration: "none" }}
+								onClick={() => {
+									setMenuOpen(false);
+									setShowResources(false);
+									setShowUseCases(false);
+								}}
 							>
 								{" "}
 								support
@@ -82,7 +95,10 @@ const Header = ({ bgcolor, color }) => {
 						</li>{" "}
 						<li
 							className="dropdown"
-							onClick={() => setShowResources(!showResources)}
+							onClick={() => {
+								setShowResources(!showResources);
+								setShowUseCases(false);
+							}}
 						>
 							Resources
 							<span
@@ -97,35 +113,86 @@ const Header = ({ bgcolor, color }) => {
 							</span>
 							{showResources && (
 								<div
-									className={`dropdown-content ${showResources ? "show" : ""}`}
+									className={`dropdown-resource-content ${
+										showResources ? "show" : ""
+									}`}
 								>
-									<div className="dropdown-column">
-										<li>Blog</li>
+									<div className="dropdown-resource-colum">
+										<Link
+											to="/blog"
+											style={{ color: color, textDecoration: "none" }}
+											onClick={() => {
+												setMenuOpen(false);
+												setShowResources(false);
+												setShowUseCases(false);
+											}}
+										>
+											{" "}
+											<li>Blog</li>
+										</Link>
 										<p>
 											Read about the latest updates to stark and articles from
 											our team.
-										</p>
-										<li>Library</li>
+										</p>{" "}
+									</div>
+									<div className="dropdown-resource-colum">
+										<Link
+											to="/library"
+											style={{ color: color, textDecoration: "none" }}
+											onClick={() => {
+												setMenuOpen(false);
+												setShowResources(false);
+												setShowUseCases(false);
+											}}
+										>
+											<li>Library</li>
+										</Link>
 										<p>
 											Learn about all things accesiiblity and inclusive design.
 										</p>
 									</div>
-									<div className="dropdown-column">
-										<li>The WCAG Explainer</li>
+									<div className="dropdown-resource-colum">
+										<Link
+											to="/wcag"
+											style={{ color: color, textDecoration: "none" }}
+											onClick={() => {
+												setMenuOpen(false);
+												setShowResources(false);
+												setShowUseCases(false);
+											}}
+										>
+											{" "}
+											<li>The WCAG Explainer</li>
+										</Link>
 										<p>Simple explainations of every WCAG criteria.</p>
-										<li>Support Community</li>
+									</div>{" "}
+									<div className="dropdown-resource-colum">
+										<Link
+											to="/support-community"
+											style={{ color: color, textDecoration: "none" }}
+											onClick={() => {
+												setMenuOpen(false);
+												setShowResources(false);
+												setShowUseCases(false);
+											}}
+										>
+											{" "}
+											<li>Support Community</li>
+										</Link>
 										<p>
 											{" "}
 											Find answer to your question plus tips and tricks on how
 											to use stark.
 										</p>
 									</div>
-									<div className="dropdown-column">
+									<div className="dropdown-resource-colum">
 										<li>Community</li>
 										<p>
 											Join more than 3,500 accesiiblity folks from around the
 											world.{" "}
 										</p>
+									</div>{" "}
+									<div className="dropdown-resource-colum">
 										<li> Stark White Paper</li>
 										<p>
 											Managing and growing your accesiiblity posture at any

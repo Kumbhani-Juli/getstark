@@ -13,6 +13,9 @@ import Login from "./components/Login";
 import StartFree from "./components/StartFree";
 import Support from "./components/support/Support";
 import Pricing from "./components/Pricing";
+import Blog from "./components/Recources/Blog";
+import Library from "./components/Library";
+import Wcage from "./components/WCAG/Wcage";
 
 function App() {
 	return (
@@ -45,6 +48,46 @@ function App() {
 						<>
 							<Header color="#fff" />
 							<Support />
+							<Footer />
+						</>
+					}
+				/>{" "}
+				<Route
+					path="/blog"
+					element={
+						<>
+							<Header color="#fff" />
+							<Blog />
+							<Footer />
+						</>
+					}
+				/>
+				<Route
+					path="/support-community"
+					element={
+						<>
+							<Header color="#fff" />
+							<Support />
+							<Footer />
+						</>
+					}
+				/>{" "}
+				<Route
+					path="/library"
+					element={
+						<>
+							<Header color="#381fd1" />
+							<Library />
+							<Footer />
+						</>
+					}
+				/>{" "}
+				<Route
+					path="/wcag"
+					element={
+						<>
+							<Header color="#fff" />
+							<Wcage />
 							<Footer />
 						</>
 					}

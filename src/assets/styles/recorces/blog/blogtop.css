@@ -1,0 +1,39 @@
+.Blog-top-container {
+  background-image: url("../../../images//home//gradient-bg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+}
+
+.blog-top-title {
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto 0 28%;
+  color: white;
+
+}
+
+.blog-top-title span {
+  color: #fedb63;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.blog-top-title h1 {
+  font-size: 3.5rem;
+  margin-top: 1rem;
+  color: white;
+
+}
+
+@media screen and (max-width: 768px) {
+  .blog-top-title {
+    margin: 0 auto;
+    text-align: left;
+    padding: 0 4rem;
+  }
+
+}

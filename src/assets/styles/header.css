@@ -67,6 +67,38 @@
   visibility: visible;
 }
 
+.dropdown-resource-content.show {
+  visibility: visible;
+}
+
+.dropdown-resource-content {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 4rem;
+  z-index: 1000;
+  width: 80%;
+  background-color: #fff;
+  display: grid;
+  border-radius: 10px;
+  grid-template-columns: 1fr 1fr;
+  color: #381fd1;
+  gap: 1rem;
+  text-transform: none;
+  padding: 1rem;
+  visibility: hidden;
+}
+
+.dropdown-resource-colum li {
+  font-size: 1rem;
+  color: #381fd1;
+}
+
+.dropdown-resource-colum p {
+  color: black;
+  font-size: 14px;
+}
+
 .dropdown-column {
   display: grid;
   min-width: 100px;

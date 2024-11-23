@@ -1,12 +1,10 @@
 .support-blocker {
   background-image: url('../../images/home/gradient-bg.webp');
-  /* Replace with the correct path to your image */
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Full viewport height */
   padding-top: 5rem;
 }
 

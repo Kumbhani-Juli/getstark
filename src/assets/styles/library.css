@@ -1,0 +1,163 @@
+.library-container {
+  padding: 7rem 0;
+  max-width: 1300px;
+  margin: 0 auto !important;
+}
+
+.library-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-box {
+  position: relative;
+  width: 100%;
+}
+
+.search-box .search-icon {
+  position: absolute;
+  left: 10px;
+  top: 35%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 16px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 5px 10px 10px 35px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: 16px;
+}
+
+.search-box input:focus {
+  border-color: #381fd1;
+  outline: none;
+}
+
+.library-left span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 1rem 0;
+  color: #333;
+}
+
+.library-left li {
+  list-style: none;
+  font-size: 14px;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.library-right h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.library-right p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.library-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.library-box {
+  border: 1px solid #333;
+  padding: 2rem 0 2rem 2rem;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.library-box img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 10px;
+  border: 1px solid #333
+}
+
+.library-box span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #381fd1;
+  text-transform: uppercase;
+}
+
+.library-box h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #333;
+  margin: 0.5rem 0;
+  width: 200px;
+}
+
+.feature-collection-section {
+  padding: 5rem 0;
+}
+
+.feature-collections-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.feature-collections-box {
+  position: relative;
+  width: 235px;
+  height: 300px;
+  border-radius: 5px;
+  border: 1px solid #e5e5e6;
+  overflow: hidden;
+}
+
+.feature-collections-box img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.feature-collections-box h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  top: 0;
+  color: #333;
+  padding: 1.5rem 1rem;
+  margin: 0.5rem 0;
+  position: absolute;
+}
+
+
+
+@media (max-width: 480px) {
+
+  /* Small screens: 2 columns, adjust padding and spacing for better fit */
+  .library-container {
+    padding: 3rem 1rem;
+  }
+
+  .library-box {
+    width: calc(50% - 0.5rem);
+  }
+
+  .library-box {
+    padding: 0.5rem;
+  }
+
+  .library-box h3 {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
