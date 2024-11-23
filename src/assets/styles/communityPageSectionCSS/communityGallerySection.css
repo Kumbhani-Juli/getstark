@@ -1,0 +1,21 @@
+.community-page-gallery-section-container {
+  padding: 7rem;
+}
+
+.community-page-gallery-section-content {
+  row-gap: 1.5rem;
+}
+
+.community-page-gallery-section-content-img img {
+  width: 100%;
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  .community-page-gallery-section-container {
+    padding: 3rem 0;
+  }
+  .community-page-gallery-section-content-img img {
+    height: auto;
+  }
+}

@@ -16,7 +16,8 @@ import Pricing from "./components/Pricing";
 import Blog from "./components/Recources/Blog";
 import Library from "./components/Library";
 import Wcage from "./components/WCAG/Wcage";
-
+import Community from "./components/Community";
+import StarkWhitePaper from "./components/StarkWhitePaper";
 function App() {
 	return (
 		<BrowserRouter>
@@ -78,6 +79,26 @@ function App() {
 						<>
 							<Header color="#381fd1" />
 							<Library />
+							<Footer />
+						</>
+					}
+				/>{" "}
+				<Route
+					path="/community"
+					element={
+						<>
+							<Header color="#381fd1" />
+							<Community />
+							<Footer />
+						</>
+					}
+				/>{" "}
+				<Route
+					path="/stark-white-paper"
+					element={
+						<>
+							<Header color="#381fd1" />
+							<StarkWhitePaper />
 							<Footer />
 						</>
 					}

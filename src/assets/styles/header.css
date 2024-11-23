@@ -76,7 +76,7 @@
   position: fixed;
   left: 0;
   top: 4rem;
-  z-index: 1000;
+  z-index: 999;
   width: 80%;
   background-color: #fff;
   display: grid;

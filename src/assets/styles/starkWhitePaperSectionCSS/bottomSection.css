@@ -1,0 +1,114 @@
+.stark-white-paper-bottom-section-container {
+  padding: 7rem;
+  background-color: #f6f6eb;
+  position: relative;
+  z-index: 0;
+}
+
+.stark-white-paper-bottom-section-content {
+  max-width: 950px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.stark-white-paper-bottom-section-content-title {
+  text-align: center;
+}
+
+.stark-white-paper-bottom-section-content-title p {
+  font-weight: bold;
+}
+
+.stark-white-paper-bottom-section-content-form {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.stark-white-paper-bottom-section-content-form-body p {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 16px;
+  color: #4b4b4e;
+}
+
+.stark-white-paper-bottom-section-content-form-body input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #4b4b4e;
+}
+
+.stark-white-paper-bottom-section-content-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 2rem 0;
+  margin-bottom: 1rem;
+}
+
+.stark-white-paper-bottom-section-content-btns .read-btn,
+.download-btn {
+  background-color: #381fd1;
+  color: #fff;
+  border: 1px solid #381fd1;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 10px 30px;
+}
+
+.stark-white-paper-bottom-section-content-btns .download-btn {
+  background-color: transparent;
+  color: #381fd1;
+}
+
+.stark-white-paper-bottom-section-content-btns .read-btn:hover {
+  background-color: #442dd7;
+}
+
+.stark-white-paper-bottom-section-content-btns .download-btn:hover {
+  background-color: #381fd1;
+  color: #fff;
+}
+
+.stark-white-paper-bottom-section-content-footer {
+  text-align: center;
+}
+
+.stark-white-paper-bottom-section-content-footer small {
+  font-weight: 600;
+}
+
+.stark-white-paper-bottom-section-bg-img {
+  position: absolute;
+  top: -30%;
+  right: 0;
+  max-width: 900px;
+  filter: blur(100px);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .stark-white-paper-bottom-section-container {
+    padding: 3rem 1rem;
+  }
+  .stark-white-paper-bottom-section-content-form-body input {
+    width: 100%;
+  }
+
+  .stark-white-paper-bottom-section-content-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .stark-white-paper-bottom-section-content-btns {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .stark-white-paper-bottom-section-content-btns button {
+    width: 100%;
+  }
+}

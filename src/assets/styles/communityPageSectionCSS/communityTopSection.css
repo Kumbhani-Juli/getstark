@@ -1,0 +1,84 @@
+.community-page-top-section-container {
+  background-color: #f3f2fc;
+  padding: 10rem 10rem;
+  position: relative;
+}
+
+.community-page-top-section-svg-icon {
+  position: absolute;
+  bottom: -10%;
+  left: 30%;
+  width: fit-content;
+  height: fit-content;
+}
+
+.community-page-top-section-svg-icon img {
+  height: 190px;
+}
+
+.community-page-top-section-content {
+  max-width: 800px;
+}
+
+.community-page-top-section-content span {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #381fd1;
+  font-weight: bold;
+  word-spacing: 0.6rem;
+}
+
+.community-page-top-section-content h1 {
+  margin: 2rem 0;
+}
+
+.community-page-top-section-content p {
+  font-weight: 600;
+}
+
+.community-page-top-section-content-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.community-page-top-section-content-buttons .host-btn,
+.join-btn {
+  background-color: #381fd1;
+  color: #fff;
+  border: 1px solid #381fd1;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 10px 30px;
+}
+
+.community-page-top-section-content-buttons .join-btn {
+  background-color: transparent;
+  color: #381fd1;
+}
+
+.community-page-top-section-content-buttons .host-btn:hover {
+  background-color: #442dd7;
+}
+
+.community-page-top-section-content-buttons .join-btn:hover {
+  background-color: #381fd1;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .community-page-top-section-container {
+    padding: 6rem 1rem;
+  }
+  .community-page-top-section-content h1 {
+    font-size: 36px;
+    margin: 0.7rem 0;
+  }
+  .community-page-top-section-content-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .community-page-top-section-svg-icon {
+    display: none;
+  }
+}

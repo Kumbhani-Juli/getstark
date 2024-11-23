@@ -186,14 +186,34 @@ const Header = ({ bgcolor, color }) => {
 										</p>
 									</div>
 									<div className="dropdown-resource-colum">
-										<li>Community</li>
+										<Link
+											to="/community"
+											style={{ color: color, textDecoration: "none" }}
+											onClick={() => {
+												setMenuOpen(false);
+												setShowResources(false);
+												setShowUseCases(false);
+											}}
+										>
+											<li>Community</li>
+										</Link>
 										<p>
 											Join more than 3,500 accesiiblity folks from around the
 											world.{" "}
 										</p>
 									</div>{" "}
 									<div className="dropdown-resource-colum">
-										<li> Stark White Paper</li>
+										<Link
+											to="/stark-white-paper"
+											style={{ color: color, textDecoration: "none" }}
+											onClick={() => {
+												setMenuOpen(false);
+												setShowResources(false);
+												setShowUseCases(false);
+											}}
+										>
+											<li> Stark White Paper</li>
+										</Link>
 										<p>
 											Managing and growing your accesiiblity posture at any
 											scale.
